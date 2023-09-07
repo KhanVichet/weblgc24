@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Hanuman:wght@300&family=Kdam+Thmor+Pro&family=Khmer&family=Mukta:wght@300&family=Roboto+Condensed:ital,wght@0,700;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+}
+.container .menu-bar {
+    width: 100%;
+    background-color: rgb(227, 114, 27);
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+}
+.container .menu-bar .menu {
+    width: 55%;
+    margin: auto;
+    display: flex;
+    padding: 5px 0px;
+}
+.container .menu-bar .menu .nav-left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.container .menu-bar .menu .nav-left .logo {
+    width: 10%;
+    height: 100%;
+}
+.container .menu-bar .menu .nav-left .logo img {
+    width: 40px;
+    height: 40px;
+}
+.container .menu-bar .menu .nav-left .nav-menu {
+    width: 90%;
+}
+.container .menu-bar .menu .nav-left .nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+.container .menu-bar .menu .nav-left .nav-menu ul li a {
+    text-decoration: none;
+    padding: 0px 15px;
+    line-height: 50px;
+    color: white;
+    font-size: 13px;
+    font-family: arial;
+    transition: 0.7s;
+}
+.container .menu-bar .menu .nav-left .nav-menu ul li:hover a {
+    color: black;
+}
+.container .menu-bar .menu .nav-right {
+    width: 40%;
+}
+.container .menu-bar .menu .nav-right ul {
+    list-style: none;
+    display: flex;
+    float: right;
+}
+.container .menu-bar .menu .nav-right ul li a {
+    text-decoration: none;
+    padding: 0px 20px;
+    line-height: 50px;
+    font-size: 13px;
+    color: white;
+    font-family: arial;
+    transition: 0.7s;
+}
+.container .menu-bar .menu .nav-right ul li:hover a {
+    color: black;
+}
+
+.container .menu-bar .menu .nav-right ul .phone-number {
+    display: flex;
+}
+
+.container .menu-bar .menu .nav-right ul .phone-number i {
+    line-height: 50px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* logo messenger */
+.container .logo-chat{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(14, 14, 238, 0.799);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.container .logo-chat{
+    position: fixed;
+    z-index: 2;
+    top: 90%;
+    left: 95%;
+}
+.container .logo-chat a i{
+    font-size: 40px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 10px;
+}
+/*slide */
+.container .slide {
+    background-image: url(image/banner/banner-1.jpg);
+    width: 100%;
+    height: 700px;
+}
+.container .slide {
+    width: 100%;
+}
+.container .slide .slide-image {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .slide .slide-image .box {
+    width: 33%;
+    height: 300px;
+    color: black;
+}
+.btn-1 i {
+    font-size: 60px;
+    margin-left: 20px;
+    color: rgb(108, 134, 163);
+}
+.btn-1 {
+    text-align: left;
+    line-height: 700px;
+
+}
+.btn-2 {
+    text-align: center;
+    height: 700px;
+    margin-top: 270px;
+
+}
+.btn-3 {
+    text-align: right;
+    line-height: 700px;
+}
+.btn-3 i {
+    font-size: 60px;
+    margin-right: 20px;
+    color: rgb(108, 134, 163);
+}
+.btn-2 h3 {
+    font-size: 50px;
+    font-family: arial;
+    color: rgba(27, 26, 26, 0.729);
+    margin-bottom: 5px;
+}
+.btn-2 button {
+    background-color: red;
+    border-radius: 5px;
+    line-height: 0px;
+    transform: 0.5s;
+    cursor: pointer;
+    border: none;
+}
+.btn-2 button p {
+    padding: 20px 60px;
+    font-family: arial;
+    font-size: 20px;
+    color: white;
+}
+.btn-2 button:hover {
+    background-color: white;
+}
+.btn-2 button:hover p {
+    color: black;
+}
+/**category*/
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.category .category-type{
+    width: 24%;
+    height: 300px;
+    overflow: hidden;
+}
+.category .category-type .type-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.category .category-type .type-image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.category .category-type .type-image .text{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.598);
+    padding: 12px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: arial;
+}
+.category .category-type .type-image:hover img{
+    transform: scale(1.07);
+}
+.category .category-type .type-image:hover .text{
+    color: white;
+    background-color: orangered;
+}
+/*Products*/
+.contain {
+    width: 60%;
+    margin: auto;
+}
+
+.contain .title {
+    margin: 20px 0px;
+}
+.contain .title h2 {
+    text-align: center;
+    color: rgb(48, 47, 47);
+    font-size: 30px;
+    font-family: arial;
+}
+.contain .title h3 {
+    text-align: center;
+    color: rgb(48, 47, 47);
+    font-size: 20px;
+    font-family: arial;
+}
+.contain .products {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.contain .products .box {
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .contain .products .box .product-box {
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container .contain .products .box .product-box .type button {
+    background-color: green;
+    border-radius: 4px;
+    border: none;
+}
+
+.container .contain .products .box .product-box .type button p {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.container .contain .products .box .product-box .code {
+    float: right;
+    margin-top: 230px;
+}
+
+.container .contain .products .box .product-box .code button {
+    background-color: rgb(51, 52, 51);
+    border-radius: 4px;
+    border: none;
+}
+
+.container .contain .products .box .product-box .code button p {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+}
+.container .contain .products .box .logo-fb{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.container .contain .products .box .logo-fb i{
+    font-size: 34px;
+    color: rgba(50, 50, 245, 0.906);
+    display: none;
+
+}
+.container .contain .products .box:hover .logo-fb i {
+    display: block;
+}
+.container .contain .products .box .logo-fb .shear-fb{
+    width: 100px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 3px 2px;
+    position: absolute;
+    top: 5px;
+    right: 110%;
+    font-size: 12px;
+    display: none;
+}
+.container .contain .products .box .logo-fb .shear-fb::after{
+    content: " ";
+    clip-path: polygon(0 0,0 100%,50% 50%);
+    width: 10px;
+    height: 9px;
+    top: 6px;
+    right: -9.6px;
+    background-color:rgba(0,0,0,0.5);
+    position: absolute;
+}
+
+.container .contain .products .box .logo-fb:hover .shear-fb{
+    display: block;
+}
+.desc .title {
+    text-align: center;
+    margin: 10px 0px;
+    height: 50px;
+}
+
+.desc .title p {
+    color: black;
+    font-size: 12px;
+    font-family: arial;
+    height: 30px;
+}
+
+.desc .title h1 {
+    color: green;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: arial;
+}
+
+.desc .title h1 span {
+    color: red;
+    margin-right: 5px;
+    text-decoration: line-through;
+}
+
+.img-detail .img-product {
+    display: flex;
+    place-content: center;
+}
+
+.img-detail .img-product .image {
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+.img-detail .img-product .image:first-child {
+    border: 2px solid rgb(250, 6, 6);
+}
+.img-detail .order button {
+    display: flex;
+    margin: auto;
+    background-color: rgb(255, 153, 0);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.box:hover .desc .order button {
+    background-color: orangered;
+}
+
+.img-detail .order button i {
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.img-detail .order button p {
+    color: white;
+    font-size: 14px;
+}
+/*Product Image*/
+.box-1 {
+    background-image: url(image/products/1.jpg);
+}
+
+.img-1 {
+    background-image: url(image/products/1.jpg);
+}
+
+.box-2 {
+    background-image: url(image/products/2.jpg);
+}
+
+.img-2 {
+    background-image: url(image/products/2.jpg);
+}
+
+.img-2-1 {
+    background-image: url(image/products/2.1.jpg);
+}
+
+.img-2-2 {
+    background-image: url(/image/products/2.2.jpg);
+}
+
+.box-3 {
+    background-image: url(image/products/3.jpg);
+}
+
+.img-3 {
+    background-image: url(image/products/3.jpg);
+}
+
+.img-3-1 {
+    background-image: url(image/products/3.1.jpg);
+}
+
+.box-4 {
+    background-image: url(image/products/4.jpg);
+}
+
+.img-4 {
+    background-image: url(image/products/4.jpg);
+}
+
+.img-4-1 {
+    background-image: url(image/products/4.1.jpg);
+}
+
+.img-4-2 {
+    background-image: url(image/products/4.2.jpg);
+}
+
+.img-4-3 {
+    background-image: url(image/products/4.3.jpg);
+}
+.box-5 {
+    background-image: url(image/products/5.jpg);
+}
+
+.img-5 {
+    background-image: url(image/products/5.jpg);
+}
+
+.img-5-1 {
+    background-image: url(image/products/5.1.jpg);
+}
+
+.img-5-2 {
+    background-image: url(image/products/5.2.jpg);
+}
+
+.img-5-3 {
+    background-image: url(image/products/5.3.jpg);
+}
+
+.box-6 {
+    background-image: url(image/products/6.jpg);
+}
+
+.img-6 {
+    background-image: url(image/products/6.jpg);
+}
+
+.img-6-1 {
+    background-image: url(image/products/6.1.jpg);
+}
+
+.img-6-2 {
+    background-image: url(image/products/6.2.jpg);
+}
+/* button view */
+.container .contain .btn-view{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.container .contain .btn-view button{
+    margin: 15px;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .contain .btn-view button p{
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    font-family: arial;
+}
+.container .contain .btn-view button:hover{
+    background-color: rgb(12, 206, 12);
+}
+/* best sale */
+.container .best-sale{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .best-sale .best-sale-box{
+    width: 32%;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container .best-sale .best-sale-box img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.container .best-sale .best-sale-box .title{
+    position: absolute;
+    top: 40%;
+    left: 90px;
+}
+.container .best-sale .best-sale-box .title button{
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.813);
+    transition: 0.5s;
+}
+.container .best-sale .best-sale-box .title button p{
+    padding: 25px 150px;
+    font-size: 14px;
+    color: black;
+    transition: 0.5s;
+}
+.container .best-sale .best-sale-box:hover  img{
+    transform: scale(1.03);
+}
+.container .best-sale .best-sale-box:hover .title button{
+    background-color: rgba(240, 70, 9, 0.825);
+}
+.container .best-sale .best-sale-box:hover .title button p{
+    color: white;
+}
+/* banner animetion */
+.banner-animetion{
+    width: 100%;
+    margin: 10px 0px;
+}
+.banner-animetion .box-banner{
+    width: 100%;
+}
+.banner-animetion .box-banner ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.banner-animetion .box-banner ul li a{
+    text-decoration: none;
+}
+.banner-animetion .box-banner ul li a img{
+    width: 100px;
+    margin: 0px 10px;
+}
+ /* end container */
+/* footer */
+footer {
+    width: 100%;
+}
+/* logo media */
+.media {
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(191, 115, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.media a{
+    position: relative;
+}
+
+.media i {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.media a .popup {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    display: none;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 4px;
+    font-size: 13px;
+    background-color: rgba(82, 74, 74, 0.741);
+}
+.media a .popup::after{
+    content: " ";
+    clip-path: polygon(100% 0,0 0, 50% 100%);
+    width: 6px;
+    height: 5px;
+    background-color: rgba(82, 74, 74, 0.741);
+    position: absolute;
+    bottom: -5px;
+    left: 17px;
+}
+.media a:hover i{
+    color: rgba(0,0,0,1);
+}
+.media a:hover .popup{
+    display: block;
+}
+ /* contect */
+.contect {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+.contect .footer-menu {
+    width: 25%;
+}
+.contect .footer-menu h2{
+    font-size: 22px;
+    margin: 10px 0px;
+    font-family: arial;
+}
+
+.contect .footer-menu ul {
+    list-style: none;
+}
+
+.contect .footer-menu ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+    margin-left: 5px;
+    
+}
+
+.contect .about {
+    width: 25%;
+}
+.contect .about h2{
+    font-size: 22px;
+    margin: 10px 0px;
+    font-family: arial;
+}
+.contect .about p{
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+}
+
+.contect .contect-us {
+    width: 25%;
+}
+.contect .contect-us h2{
+    font-size: 22px;
+    margin: 10px 0px;
+    font-family: arial;
+}
+.contect .contect-us p{
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+    color: black;
+}
+
+.contect .follower{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    margin-top: 10px;
+
+}
+.contect .follower .bg-page{
+    width: 100%;
+    display: grid;
+    height: 150px;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)), url(image/page/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contect .bg-page .page{
+    width: 100%;
+    height: 100%;
+}
+.contect .bg-page .page .logo-page a img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid white;
+}
+.contect .bg-page .page .logo-page a h3{
+    position: absolute;
+    top: 11px;
+    left: 80px;
+    font-size: 22px;
+    color: white;
+}
+.contect .bg-page .page .logo-page p{
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-size: 20px;
+    color: white;
+}
+ /* end contect */
+
+ /* bar code */
+.bar-code{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.bar-code .bar-code-box{
+    width: 10%;
+}
+.bar-code .bar-code-box img{
+    width: 100px;
+    height: 100px;
+}
+.bar-code .bar-code-box .txt img{
+    width: 20px;
+    height: 20px;
+}
+.bar-code .bar-code-box .txt h1{
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+}
+.bar-code .bar-code-box .txt h1 span{
+    margin-left: 10px;
+}
+.bar-code .bar-code-box .txt p{
+    font-size: 18px;
+    color: orangered;
+}
+/* end bar code */
+/* end footer */
